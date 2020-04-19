@@ -1,9 +1,9 @@
 # Setup
 title: "Cory's Personal Site"
 tagline: a dark mode friendly Jekyll theme
-url: https://davidbrownman.com/cory
+url: https://davidbrownman.com
 paginate: 1
-baseurl: ""
+baseurl: "https://davidbrownman.com/cory"
 permalink: :title/
 
 kramdown:
