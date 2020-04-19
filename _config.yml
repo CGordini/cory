@@ -1,13 +1,13 @@
 # Setup
-title: Noir
+title: "Cory's Personal Site"
 tagline: a dark mode friendly Jekyll theme
-url: https://noir.essentialenemy.com
+url: https://davidbrownman.com/cory
 paginate: 1
 baseurl: ""
 permalink: :title/
 
 kramdown:
-    footnote_backlink: "&#10548;"
+  footnote_backlink: "&#10548;"
 
 # Gems
 plugins:
