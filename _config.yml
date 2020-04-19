@@ -1,10 +1,10 @@
 # Setup
-title: "Cory Gordinier"
-tagline: "Software Developer Extraordinaire"
-url: https://davidbrownman.com
-paginate: 1
-baseurl: "/cory"
-permalink: :title/
+title: Cory Gordinier
+tagline: Software Developer Extraordinaire
+url: https://davidbrownman.com ## FIXME: this almost certainly won't be your prod url
+paginate: 5
+baseurl: "/cory" # FIXME: you will probably replace this with ""
+permalink: /posts/:year/:title/
 
 kramdown:
   footnote_backlink: "&#10548;"
@@ -35,13 +35,22 @@ sass:
 # Replace this value and uncomment to enable Google Analytics tracking
 # ga_analytics: UA-000000-0
 
-# Specify the author for blog posts
-author:
-  name: Victor Johnson
-  url: https://twitter.com/essentialenemy
-  email: me@essentialenemy.com
+social:
+  twitter: almost
+  github: asdf
+  instagram: asdf
 
-# Custom vars
-version: 1.3.0
-github:
-  repo: https://github.com/essentialenemy/noir
+nav:
+  # each has a name (the path) and optionally, a label (to show in the nav bar)
+  - name: about
+
+  - name: contact
+    label: contact me
+
+  - name: posts
+
+author:
+  name: Cory Gordinier
+  url: https://twitter.com/xavdid # FIXME: either link to this site or do your own social
+  email: me@essentialenemy.com # FIXME: same
+

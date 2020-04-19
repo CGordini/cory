@@ -7,7 +7,7 @@ title: Styles
   <small>This page serves to document the style of various elements used in the site's design.</small>
 </p>
 
-## <small>THIS IS A HEADER</small>
+## THIS IS A HEADER
 
 This is the font, size, color and spacing of regular ol' paragraph <p> text. Using Markdown makes it dead simple
 to make text _italic_, **bold** or **_bold and italic_**.
@@ -82,7 +82,7 @@ If you include any inline `code` it looks awesome.
 
 A code block highlights the [syntax](<https://en.wikipedia.org/wiki/Syntax_(programming_languages)>) and displays the language:
 
-{% highlight ruby %}
+{% highlight ruby lineos %}
 def test(a=1,b=2,c=a+b)
 puts "#{a},#{b},#{c}"
 end
