@@ -26,7 +26,9 @@ layout: compress
                   navlink.label | default: navlink.name | downcase
                 }}</a>
               </li>
-              {% endfor %}
+              {% if forloop.last == false %}
+              <li>|</li>
+              {% endif %} {% endfor %}
             </ul>
           </div>
         </header>
@@ -37,14 +39,9 @@ layout: compress
       </div>
 
       <footer class="footer">
-        <p>
-          <a href="https://github.com/essentialenemy/noir/">Noir</a> theme for
-          <a href="https://jekyllrb.com/">Jekyll</a> by
-          <a href="https://essentialenemy.com/">Victor Johnson</a> <br /><a
-            href="https://github.com/essentialenemy/noir/blob/master/LICENSE.md"
-            >Released under MIT License</a
-          >
-        </p>
+        {% for social_link in site.social %}
+        <a href="{{ social_link[1] }}">{{ social_link[0] }}</a>
+        {% if forloop.last == false %} | {% endif %} {% endfor %}
       </footer>
     </div>
 

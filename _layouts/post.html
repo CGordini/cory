@@ -9,17 +9,11 @@ layout: default
     >{{ page.date | date_to_long_string: "ordinal", "US" }}
   </time>
 
-  {{ content | smartify }}
-
-  <br />
-  <div class="tag-list">
-    {% if post %} {% assign tags = post.tags %} {% else %} {% assign tags =
-    page.tags %} {% endif %} {% for tag in tags %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag | slugize }}">#{{ tag }}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
+  <div class="post-content">
+    {{ content | smartify }}
   </div>
 </article>
-
+<hr />
 <div class="PageNavigation">
   {% if page.previous.url %}
   <a class="prev" href="{{ site.baseurl }}{{ page.previous.url }}"

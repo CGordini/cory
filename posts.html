@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Blog
 ---
 
@@ -10,7 +9,7 @@ order.
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date:
 '%Y'" %} {% for year in postsByYear %}
-<h1>{{ year.name }}</h1>
+<h3>{{ year.name }}</h3>
 <ul>
   {% for post in year.items %}
   <li>

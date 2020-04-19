@@ -1,8 +1,7 @@
 # Setup
 title: Cory Gordinier
-tagline: Software Developer Extraordinaire
+tagline: Dog Dad, Gear Head, Software Engineer ## FIXME: some title you like
 url: https://davidbrownman.com ## FIXME: this almost certainly won't be your prod url
-paginate: 5
 baseurl: "/cory" # FIXME: you will probably replace this with ""
 permalink: /posts/:year/:title/
 
@@ -12,7 +11,6 @@ kramdown:
 # Gems
 plugins:
   - jekyll-gist
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-target-blank
 
@@ -36,9 +34,9 @@ sass:
 # ga_analytics: UA-000000-0
 
 social:
-  twitter: almost
-  github: asdf
-  instagram: asdf
+  instagram: https://www.instagram.com/cgordini/
+  github: https://github.com/cgordini/
+  twitter: https://twitter.com/cgordini/
 
 nav:
   # each has a name (the path) and optionally, a label (to show in the nav bar)
@@ -54,3 +52,13 @@ author:
   url: https://twitter.com/xavdid # FIXME: either link to this site or do your own social
   email: me@essentialenemy.com # FIXME: same
 
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post" # overrides previous default layout
